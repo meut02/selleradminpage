@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Admin Page</title>
+</head>
+<body>
+<header>
+    <h1>SELLER ADMIN PAGE</h1>
+</header>
+
+<section class="container">
+    <form onsubmit="savetoserver(event)" id="my-form">
+    <div>
+        <label for="price">SELLING PRICE</label>
+        <input type="text" name="price" id="price" required>
+    </div>
+    <div>
+        <label for="name">PRODUCT NAME</label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+        <label for="category">CHOOSE CATEGORY</label>
+        <select id="category" required>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+            <option value="books">Grocery</option>
+          </select>
+    </div>
+    <input class="btn" type="submit" value="Submit">
+    </form>
+    <ul id="users"></ul>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script src="selleradmin.js"></script>
+    
+</body>
+</html>
